@@ -24,12 +24,19 @@ export default function Main() {
     <div
       id="container"
       style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "#f8fafc",
+        //height: "100%",
+        //display: "flex",
+        //flexDirection: "column",
+        //backgroundColor: "#f8fafc",
       }}
-      className=""
+      className="
+      w-1/2
+      flex 
+      flex-col 
+      
+      bg-slate-50 
+      h-full
+      "
     >
       <img
         src="/pizzafox.png"
@@ -42,7 +49,7 @@ export default function Main() {
       />
       <form
         style={{
-          width: "60%",
+         width: "60%",
           display: "flex",
           flexDirection: "column",
           alignSelf: "center",
