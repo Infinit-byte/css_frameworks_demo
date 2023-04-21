@@ -30,10 +30,9 @@ export default function Main() {
         //backgroundColor: "#f8fafc",
       }}
       className="
-      w-1/2
+      
       flex 
       flex-col 
-      
       bg-slate-50 
       h-full
       "
@@ -76,110 +75,22 @@ export default function Main() {
         >
           Please sign in to continue
         </p>
-        <div
-          id="email-input-container"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            marginTop: "1em",
-            borderRadius: "0.75rem",
-            borderWidth: "1px",
-            borderColor: "black",
-            backgroundColor: "white",
-            filter:
-              "drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1))",
-          }}
-          className=""
-        >
-          <label
-            id="email-label"
-            style={{
-              fontSize: "1.125rem",
-              lineHeight: "1.75rem",
-              width: "100%",
-              margin: "0.3em 0 0 0.3em",
-            }}
-            className=""
-            htmlFor="email-input"
-          >
-            ✉️ Email
-          </label>
-          <input
-            id="email-input"
-            style={{
-              fontSize: "1.5rem",
-              lineHeight: "2rem",
-              display: "inline",
-              padding: "0 0 0.3em 0.3em",
-              backgroundColor: "transparent",
-              borderBottomRightRadius: "0.75rem",
-              borderBottomLeftRadius: "0.75rem",
-            }}
-            className=""
-            type="email"
-            value={email}
-            onChange={handleEmailChange}
-            placeholder="swagger@itu.dk"
-          />
-        </div>
-        <div
-          id="password-input-container"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            marginTop: "1em",
-            borderWidth: "1px",
-            borderTopColor: "#f8fafc",
-            borderLeftColor: "#f8fafc",
-            borderRightColor: "#f8fafc",
-            borderBottomColor: "black",
-          }}
-          className=""
-        >
-          <label
-            id="password-label"
-            style={{
-              fontSize: "1.125rem",
-              lineHeight: "1.75rem",
-              width: "100%",
-              margin: "0.3em 0 0 0.3em",
-            }}
-            className=""
-            htmlFor="password-input"
-          >
-            🔒 Password
-          </label>
-          <input
-            id="password-input"
-            style={{
-              fontSize: "1.5rem",
-              lineHeight: "2rem",
-              padding: "0 0 0.3em 0.3em",
-              backgroundColor: "white",
-            }}
-            className=""
-            type="password"
-            value={password}
-            onChange={handlePasswordChange}
-            placeholder="princessBride1880"
-          />
-        </div>
-        <input
-          id="submit-input"
-          style={{
-            width: "40%",
-            alignSelf: "flex-end",
-            marginTop: "1em",
-            backgroundColor: "#075985",
-            borderRadius: "20px",
-            color: "white",
-            borderRadius: "0.75rem",
-          }}
-          className=""
-          type="submit"
-          value="submit ➜"
-        />
       </form>
+      <div class="form-floating mb-3">
+  <input 
+    type="email" 
+    class="form-control" 
+    id="floatingInput" 
+    placeholder="name@example.com"/>
+
+  <label 
+  for="floatingInput">Email address</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password"/>
+  <label for="floatingPassword">Password</label>
+</div>
+
     </div>
   );
 }
